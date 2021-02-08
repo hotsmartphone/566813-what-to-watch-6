@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import MoviePreview from '../movie-preview/movie-preview';
 
 
-const Main = (props) => {
-  const {currentMovie, moviesList} = props;
+const Main = ({currentMovie, moviesList, genres}) => {
 
   return (
     <React.Fragment>
@@ -68,42 +67,23 @@ const Main = (props) => {
           <h2 className="catalog__title visually-hidden">Catalog</h2>
 
           <ul className="catalog__genres-list">
-            <li className="catalog__genres-item catalog__genres-item--active">
-              <a href="#" className="catalog__genres-link">All genres</a>
-            </li>
-            <li className="catalog__genres-item">
-              <a href="#" className="catalog__genres-link">Comedies</a>
-            </li>
-            <li className="catalog__genres-item">
-              <a href="#" className="catalog__genres-link">Crime</a>
-            </li>
-            <li className="catalog__genres-item">
-              <a href="#" className="catalog__genres-link">Documentary</a>
-            </li>
-            <li className="catalog__genres-item">
-              <a href="#" className="catalog__genres-link">Dramas</a>
-            </li>
-            <li className="catalog__genres-item">
-              <a href="#" className="catalog__genres-link">Horror</a>
-            </li>
-            <li className="catalog__genres-item">
-              <a href="#" className="catalog__genres-link">Kids & Family</a>
-            </li>
-            <li className="catalog__genres-item">
-              <a href="#" className="catalog__genres-link">Romance</a>
-            </li>
-            <li className="catalog__genres-item">
-              <a href="#" className="catalog__genres-link">Sci-Fi</a>
-            </li>
-            <li className="catalog__genres-item">
-              <a href="#" className="catalog__genres-link">Thrillers</a>
-            </li>
+            {/* Составляет список ссылок-жанров путем .map перечня жанров */}
+            {genres.map((genre, i) => {
+              return (
+                <li key={genre + i} className={`catalog__genres-item` + (genre === `All genres` ? ` catalog__genres-item--active` : ``)}>
+                  <a href="#" className="catalog__genres-link">{genre}</a>
+                </li>
+              );
+            })}
           </ul>
 
           <div className="catalog__movies-list">
-            {/* Рендерит превью фильмов, создавая компоненты на основе моков с перечнем фильмов. Мок-данные передаются как пропс.
-              */}
-            {Object.keys(moviesList).map((name, i) => <MoviePreview key={name + i} movieName={name} moviePreviewImg={moviesList[name]} />)}
+            {/* Рендерит превью фильмов, создавая компоненты на основе моков с перечнем фильмов. Мок-данные передаются как пропс.*/}
+            {Object.keys(moviesList).map((name, i) => {
+              return (
+                <MoviePreview key={name + i} movieName={name} moviePreviewImg={moviesList[name]} />
+              );
+            })}
           </div>
 
           <div className="catalog__more">
@@ -138,7 +118,8 @@ Main.propTypes = {
     "genre": PropTypes.string.isRequired,
     "released": PropTypes.number.isRequired,
   }),
-  moviesList: PropTypes.object
+  moviesList: PropTypes.object,
+  genres: PropTypes.arrayOf(PropTypes.string)
 };
 
 export default Main;

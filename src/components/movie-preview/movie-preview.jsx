@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const MoviePreview = (props) => {
-  const {movieName, moviePreviewImg} = props;
+const MoviePreview = ({movieName, moviePreviewImg}) => {
 
   return (
     <article className="small-movie-card catalog__movies-card">
