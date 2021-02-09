@@ -1,4 +1,4 @@
-const CURRENT_MOVIE = { // МОК-данные с примером одного фильма для рендера главной страницы
+const CURRENT_MOVIE = {
   "name": `The Grand Budapest Hotel`,
   "poster_image": `img/the-grand-budapest-hotel-poster.jpg`,
   "preview_image": `img/the-grand-budapest-hotel.jpg`,
@@ -7,7 +7,7 @@ const CURRENT_MOVIE = { // МОК-данные с примером одного 
   "released": 2014,
 };
 
-const MOVIES_LIST = { // МОК-данные с примерами фильмов
+const MOVIES = {
   "Fantastic Beasts: The Crimes of Grindelwald": `fantastic-beasts-the-crimes-of-grindelwald.jpg`,
   "Bohemian Rhapsody": `bohemian-rhapsody.jpg`,
   "Macbeth": `macbeth.jpg`,
@@ -32,4 +32,4 @@ const MOVIES_LIST = { // МОК-данные с примерами фильмо�
 
 const GENRES = [`All genres`, `Comedies`, `Crime`, `Documentary`, `Dramas`, `Horror`, `Kids & Family`, `Romance`, `Sci-Fi`, `Thrillers`];
 
-export {CURRENT_MOVIE, MOVIES_LIST, GENRES};
+export {CURRENT_MOVIE, MOVIES, GENRES};
