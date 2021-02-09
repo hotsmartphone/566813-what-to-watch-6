@@ -8,28 +8,26 @@ const CURRENT_MOVIE = {
 };
 
 const MOVIES = {
-  "Fantastic Beasts: The Crimes of Grindelwald": `fantastic-beasts-the-crimes-of-grindelwald.jpg`,
-  "Bohemian Rhapsody": `bohemian-rhapsody.jpg`,
-  "Macbeth": `macbeth.jpg`,
-  "Aviator": `aviator.jpg`,
-  "We need to talk about Kevin": `we-need-to-talk-about-kevin.jpg`,
-  "What We Do in the Shadows": `what-we-do-in-the-shadows.jpg`,
-  "Revenant": `revenant.jpg`,
-  "Johnny English": `johnny-english.jpg`,
-  "Shutter Island": `shutter-island.jpg`,
-  "Pulp Fiction": `pulp-fiction.jpg`,
-  "No Country for Old Men": `no-country-for-old-men.jpg`,
-  "Snatch": `snatch.jpg`,
-  "Moonrise Kingdom": `moonrise-kingdom.jpg`,
-  "Seven Years in Tibet": `seven-years-in-tibet.jpg`,
-  "Midnight Special": `midnight-special.jpg`,
-  "War of the Worlds": `war-of-the-worlds.jpg`,
-  "Dardjeeling Limited": `dardjeeling-limited.jpg`,
-  "Orlando": `orlando.jpg`,
-  "Mindhunter": `mindhunter.jpg`,
-  "The Grand Budapest Hotel": `bg-the-grand-budapest-hotel.jpg`,
+  "Fantastic Beasts: The Crimes of Grindelwald": `img/fantastic-beasts-the-crimes-of-grindelwald.jpg`,
+  "Bohemian Rhapsody": `img/bohemian-rhapsody.jpg`,
+  "Macbeth": `img/macbeth.jpg`,
+  "Aviator": `img/aviator.jpg`,
+  "We need to talk about Kevin": `img/we-need-to-talk-about-kevin.jpg`,
+  "What We Do in the Shadows": `img/what-we-do-in-the-shadows.jpg`,
+  "Revenant": `img/revenant.jpg`,
+  "Johnny English": `img/johnny-english.jpg`,
+  "Shutter Island": `img/shutter-island.jpg`,
+  "Pulp Fiction": `img/pulp-fiction.jpg`,
+  "No Country for Old Men": `img/no-country-for-old-men.jpg`,
+  "Snatch": `img/snatch.jpg`,
+  "Moonrise Kingdom": `img/moonrise-kingdom.jpg`,
+  "Seven Years in Tibet": `img/seven-years-in-tibet.jpg`,
+  "Midnight Special": `img/midnight-special.jpg`,
+  "War of the Worlds": `img/war-of-the-worlds.jpg`,
+  "Dardjeeling Limited": `img/dardjeeling-limited.jpg`,
+  "Orlando": `img/orlando.jpg`,
+  "Mindhunter": `img/mindhunter.jpg`,
+  "The Grand Budapest Hotel": `img/bg-the-grand-budapest-hotel.jpg`,
 };
 
-const GENRES = [`All genres`, `Comedies`, `Crime`, `Documentary`, `Dramas`, `Horror`, `Kids & Family`, `Romance`, `Sci-Fi`, `Thrillers`];
-
-export {CURRENT_MOVIE, MOVIES, GENRES};
+export {CURRENT_MOVIE, MOVIES};
